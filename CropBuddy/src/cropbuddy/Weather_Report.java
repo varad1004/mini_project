@@ -35,11 +35,13 @@ public class Weather_Report extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 0));
+        jPanel1.setInheritsPopupMenu(true);
 
         jLabel1.setFont(new java.awt.Font("The Bold Font", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 179, 1));
         jLabel1.setText("weather report");
 
+        jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(142, 255, 12));
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Thunder", 0, 23)); // NOI18N

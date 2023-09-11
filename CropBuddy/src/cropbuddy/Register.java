@@ -45,6 +45,7 @@ public class Register extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(613, 471));
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 0));
@@ -54,37 +55,37 @@ public class Register extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(153, 255, 153));
         jLabel1.setText("Create Account ");
         jLabel1.setPreferredSize(new java.awt.Dimension(81, 30));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 305, 48));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 305, 48));
 
         jLabel2.setFont(new java.awt.Font("Thunder", 0, 20)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(153, 255, 153));
         jLabel2.setText("Enter Username");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 112, 30));
-        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 112, 31));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 112, 30));
+        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 112, 31));
 
         jLabel3.setFont(new java.awt.Font("Thunder", 0, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(153, 255, 153));
         jLabel3.setText("Enter Password");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 270, 94, 24));
-        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 174, 34));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 190, 94, 24));
+        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, 174, 34));
 
         m.setFont(new java.awt.Font("Thunder", 0, 20)); // NOI18N
         m.setForeground(new java.awt.Color(153, 255, 153));
         m.setText("Enter Mobile No");
-        jPanel1.add(m, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, 100, -1));
+        jPanel1.add(m, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 110, 100, -1));
 
         mobileno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mobilenoActionPerformed(evt);
             }
         });
-        jPanel1.add(mobileno, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 117, 31));
+        jPanel1.add(mobileno, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 117, 31));
 
         jLabel6.setFont(new java.awt.Font("Thunder", 0, 20)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(153, 255, 153));
         jLabel6.setText("Enter Email");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, 97, 20));
-        jPanel1.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 120, 30));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 97, 20));
+        jPanel1.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 120, 30));
 
         Signup.setBackground(new java.awt.Color(153, 255, 153));
         Signup.setFont(new java.awt.Font("Thunder", 0, 20)); // NOI18N
@@ -95,27 +96,27 @@ public class Register extends javax.swing.JFrame {
                 SignupActionPerformed(evt);
             }
         });
-        jPanel1.add(Signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 95, 34));
+        jPanel1.add(Signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 95, 34));
 
         jButton2.setBackground(new java.awt.Color(153, 255, 153));
         jButton2.setFont(new java.awt.Font("Thunder", 0, 20)); // NOI18N
         jButton2.setText("Reset");
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 5, true));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 93, 34));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, 93, 34));
 
         jLabel8.setFont(new java.awt.Font("Thunder", 0, 20)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(153, 255, 153));
         jLabel8.setText("Already Have Account ?");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 440, 145, 28));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 145, 28));
 
         jButton3.setBackground(new java.awt.Color(102, 255, 102));
         jButton3.setFont(new java.awt.Font("Thunder", 0, 20)); // NOI18N
         jButton3.setText("Login");
         jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 5, true));
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 439, 60, 30));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 350, 60, 30));
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 740, 730);
+        jPanel1.setBounds(0, -30, 640, 730);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
