@@ -1,5 +1,8 @@
 package cropbuddy;
 
+import java.io.File;
+import javax.swing.JFileChooser;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -46,6 +49,8 @@ public class Sell_pro extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         textField5 = new java.awt.TextField();
         jLabel8 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         popupMenu1.setLabel("popupMenu1");
 
@@ -125,6 +130,17 @@ public class Sell_pro extends javax.swing.JFrame {
         getContentPane().add(jLabel8);
         jLabel8.setBounds(200, 320, 80, 20);
 
+        jButton1.setText("upload");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(290, 530, 160, 30);
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(480, 530, 190, 30);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -135,6 +151,15 @@ public class Sell_pro extends javax.swing.JFrame {
     private void textField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_textField5ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f =chooser.getSelectedFile();
+        String filename = f.getAbsolutePath();
+        jTextField1.setText(filename);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,6 +197,7 @@ public class Sell_pro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
@@ -185,6 +211,7 @@ public class Sell_pro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
+    private javax.swing.JTextField jTextField1;
     private java.awt.PopupMenu popupMenu1;
     private java.awt.TextField textField1;
     private java.awt.TextField textField2;
