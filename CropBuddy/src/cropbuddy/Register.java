@@ -164,6 +164,11 @@ public class Register extends javax.swing.JFrame {
                 email.setText("");
                 password.setText("");
                 showMessageDialog(null, "New account has been created successfully!");
+                Dasboard dash = new Dasboard();
+                dash.setVisible(true);
+                dash.pack();
+                dash.setLocationRelativeTo(null);
+                this.dispose();
            }
                
            }catch (Exception e){
