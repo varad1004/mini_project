@@ -81,6 +81,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 0));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(102, 102, 102));

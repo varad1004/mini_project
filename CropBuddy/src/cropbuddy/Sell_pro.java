@@ -34,6 +34,7 @@ public class Sell_pro extends javax.swing.JFrame {
         jPopupMenu1 = new javax.swing.JPopupMenu();
         jPopupMenu2 = new javax.swing.JPopupMenu();
         popupMenu1 = new java.awt.PopupMenu();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -51,95 +52,111 @@ public class Sell_pro extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        button1 = new java.awt.Button();
 
         popupMenu1.setLabel("popupMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(750, 647));
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(0, 204, 0));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("The Bold Font", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(151, 255, 101));
         jLabel1.setText("SELL PRODUCT");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(280, 0, 280, 55);
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 280, 55));
 
         jLabel2.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(151, 255, 101));
         jLabel2.setText("quantity");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(230, 260, 50, 30);
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 50, 30));
 
         jLabel3.setFont(new java.awt.Font("The Bold Font", 0, 30)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(151, 255, 101));
         jLabel3.setText("Enter product details");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(220, 90, 350, 50);
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 350, 50));
 
+        jComboBox1.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--select category--", "vegetable", "fruit", "seeds" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(280, 160, 240, 30);
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, 240, 30));
 
         jLabel4.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(151, 255, 101));
         jLabel4.setText("Category");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(210, 160, 70, 30);
-        getContentPane().add(textField1);
-        textField1.setBounds(280, 210, 240, 30);
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 70, 30));
+        jPanel1.add(textField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 240, 30));
 
         jLabel5.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(151, 255, 101));
         jLabel5.setText("product description:");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(160, 380, 120, 40);
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, 120, 40));
 
         jLabel6.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(151, 255, 101));
         jLabel6.setText("product name");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(200, 210, 80, 30);
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 80, 30));
 
         textField2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        getContentPane().add(textField2);
-        textField2.setBounds(280, 260, 240, 30);
+        jPanel1.add(textField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 240, 30));
 
+        jComboBox2.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "kg", "gm", "ton", " " }));
-        getContentPane().add(jComboBox2);
-        jComboBox2.setBounds(520, 320, 60, 30);
-        getContentPane().add(textField3);
-        textField3.setBounds(280, 320, 240, 30);
+        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 60, 30));
+        jPanel1.add(textField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 390, 240, 30));
 
+        jComboBox3.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "kg", "gm", "ton", " " }));
-        getContentPane().add(jComboBox3);
-        jComboBox3.setBounds(520, 260, 60, 30);
+        jPanel1.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, 60, 30));
 
         jLabel7.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(151, 255, 101));
         jLabel7.setText("upload photo");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(160, 520, 130, 40);
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 580, 80, 40));
 
         textField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 textField5ActionPerformed(evt);
             }
         });
-        getContentPane().add(textField5);
-        textField5.setBounds(280, 380, 250, 110);
+        jPanel1.add(textField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, 250, 110));
 
         jLabel8.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(151, 255, 101));
         jLabel8.setText("price per unit");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(200, 320, 80, 20);
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, 80, 20));
 
+        jButton1.setBackground(new java.awt.Color(0, 204, 0));
+        jButton1.setFont(new java.awt.Font("Thunder", 0, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(151, 255, 101));
         jButton1.setText("upload");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(290, 530, 160, 30);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(480, 530, 190, 30);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 590, 160, 30));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 590, 190, 30));
+
+        button1.setBackground(new java.awt.Color(0, 204, 0));
+        button1.setFont(new java.awt.Font("The Bold Font", 0, 14)); // NOI18N
+        button1.setForeground(new java.awt.Color(151, 255, 101));
+        button1.setLabel("Home\n");
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 130, 30));
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, -30, 750, 740);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -160,6 +177,15 @@ public class Sell_pro extends javax.swing.JFrame {
         String filename = f.getAbsolutePath();
         jTextField1.setText(filename);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+        Dasboard dash = new Dasboard();
+                dash.setVisible(true);
+                dash.pack();
+                dash.setLocationRelativeTo(null);
+                this.dispose();
+    }//GEN-LAST:event_button1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -197,6 +223,7 @@ public class Sell_pro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Button button1;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -209,6 +236,7 @@ public class Sell_pro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
     private javax.swing.JTextField jTextField1;
