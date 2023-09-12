@@ -57,7 +57,7 @@ public class Sell_pro extends javax.swing.JFrame {
         popupMenu1.setLabel("popupMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(750, 647));
+        setPreferredSize(new java.awt.Dimension(750, 721));
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 0));

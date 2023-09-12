@@ -42,6 +42,7 @@ public class crop_manage extends javax.swing.JFrame {
         jComboBox3 = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
+        button1 = new java.awt.Button();
 
         jScrollPane1.setViewportView(jTextPane2);
 
@@ -119,6 +120,17 @@ public class crop_manage extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 200, 170));
 
+        button1.setBackground(new java.awt.Color(0, 255, 0));
+        button1.setFont(new java.awt.Font("The Bold Font", 0, 14)); // NOI18N
+        button1.setForeground(new java.awt.Color(0, 153, 0));
+        button1.setLabel("Home\n");
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 40, 130, 40));
+
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 740, 600);
 
@@ -128,6 +140,15 @@ public class crop_manage extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+        Dasboard dash = new Dasboard();
+        dash.setVisible(true);
+        dash.pack();
+        dash.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_button1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,6 +186,7 @@ public class crop_manage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Button button1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
